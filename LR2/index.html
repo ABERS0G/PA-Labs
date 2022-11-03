@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        p{
+            margin: 0;
+            font-size: 25px;
+        }
+        .tdiv{
+            margin: 0 5px;
+            border-radius: 5px;
+            background-color: aqua;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .tdiv:hover{
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+<div id="workArea" style="max-width: 100%"></div>
+<div style="display: flex; flex-direction: row; justify-content: center; width: 100%; margin-top: 10px">
+    <div id="ids" class="tdiv">
+        <p>IDS</p>
+    </div>
+    <div id="reset" class="tdiv">
+        <p>Reset</p>
+    </div>
+    <div id="a" class="tdiv">
+        <p>A*</p>
+    </div>
+</div>
+
+<script>
+    require('./index')
+</script>
+</body>
+</html>
