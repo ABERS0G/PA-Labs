@@ -113,7 +113,7 @@ function show_way(){
 const alfa_const = 2
 const beta_const = 3
 const ro_const = 0.4
-const M_const = 10
+const M_const = 35
 const graf_length = 150
 
 //Строим граф
@@ -132,10 +132,18 @@ for(let one of feromon_graf){
     feromon_graf_temp.push(one.slice(0))
 }
 
+let random_positions=[]
+
 //Главная функция алгоритма
 function main_func(){
     let l = 0
-    let visited = [Math.floor(Math.random()*graf_length)]
+    let new_rand_number
+    do {
+        new_rand_number = Math.floor(Math.random()*graf_length)
+    } while (random_positions.includes(new_rand_number))
+    random_positions.push(new_rand_number)
+
+    let visited = [new_rand_number]
 
     for(let i=0; i<graf.length; i++){
         let current = {
@@ -204,8 +212,9 @@ function iteration(){
 }
 
 //Цикл итераций
-for(let one = 0; one<1000; one++){
+for(let one = 0; one<5; one++){
     iteration()
+    random_positions=[]
 }
 
 show_way()
