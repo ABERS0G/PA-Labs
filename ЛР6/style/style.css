@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: lightgrey;
+}
+
+.play-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background-color: mediumseagreen;
+    border: 20px solid saddlebrown;
+    opacity: 0;
+    transition: opacity 1s;
+    border-radius: 80px;
+}
+
+.intro{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: white;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.intro p{
+    margin: 0;
+    padding: 0;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle13{
+    width: 0;
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding: 10px 0;
+    margin: 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.fields{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+.fields p{
+    margin: 0;
+}
+.fields div{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    flex: 1;
+}
+
+.navigation{
+    top: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+
+.button{
+    padding: 5px 10px;
+    border: 2px solid white;
+    margin: 5px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.button:hover{
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+.button.hover{
+    transform: scale(0.9);
+    opacity: 0.7;
+    background-color: lightgreen;
+}
+
+.dice{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.menu{
+    padding: 0 20px;
+    width: 100%;
+    position: absolute;
+    top: calc(100% + 25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.menu .button{
+    flex: 1;
+    z-index: 10;
+}
+
+.restart-button{
+    position: absolute;
+    top: 20px; left: 20px;
+    height: 30px; width: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: whitesmoke;
+    transition: opacity 0.5s;
+    cursor: pointer;
+    z-index: 1;
+}
+.restart-button:hover{
+    opacity: 0.5;
+}
+
+.button .p{
+    height: 100%;
+    width: 100%;
+}
