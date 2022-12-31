@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+
+    <script src="js/three.js"></script>
+</head>
+<body>
+
+<div class="play-table">
+
+    <div class="navigation">
+        <div id="playButton" class="button"><p>PLAY</p></div>
+        <div><p id="turn" style="font-style: italic; font-weight: normal; font-size: 40px; font-family: sans-serif; margin-top: 20px">Your turn</p></div>
+    </div>
+    
+    <div class="restart-button">
+        <img src="imgs/restart.png" style="height: 100%; width: 100%" alt="restart">
+    </div>
+
+    <div class="fields">
+        <div class="field1">
+            <p id="playerName">Player</p>
+            <hr style="width: 50%; margin: 5px 0; border: 1px solid white"/>
+            <p>Points: <span id="playerPoints">0</span> - <span id="PP_Full">0</span></p>
+        </div>
+        <div class="field2">
+            <p>Opponent</p>
+            <hr style="width: 50%; margin: 5px 0; border: 1px solid white"/>
+            <p>Points: <span id="opponentPoints">0</span> - <span id="OP_Full">0</span></p>
+        </div>
+    </div>
+
+    <div class="dice" style="display: none"></div>
+
+
+    <div class="menu">
+        <div id="b-add" class="button">ADD</div>
+        <div id="b-subtract" class="button"><p>SUBTRACT</p></div>
+        <div id="b-x2" class="button">x2</div>
+        <div id="b-x3" class="button">x3</div>
+        <div id="b-x4" class="button">x4</div>
+        <div id="b-d2" class="button">/2</div>
+        <div id="b-d3" class="button">/3</div>
+        <div id="b-d4" class="button">/4</div>
+    </div>
+</div>
+
+<div class="intro">
+    <div class="text-container">
+        <p style="font-size: 100px">1</p>
+        <div class="middle13">
+            <p style="font-style: italic">laboratory work</p>
+        </div>
+        <p style="font-size: 100px">3</p>
+    </div>
+</div>
+
+<script src="js/intro.js"></script>
+<script src="js/opponent.js"></script>
+<script src="js/script.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
